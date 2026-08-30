@@ -48,7 +48,7 @@
 - Python diagnostic exercise (calibrate real starting point regardless of self-report).
 - Light math/stats diagnostic (probability, basic linear algebra intuition) — identifies gaps, not a full course.
 - Obsidian vault set up as the note-taking/PDF-markup/spaced-repetition system.
-- AWS free-tier account created; billing alarms set (safety first).
+- **AWS account creation deliberately deferred to the start of Phase 2** (see trial-period rule, Section 7) — the free tier's 12-month clock starts at account creation, so creating it now would burn runway during Phases 0–1 when it isn't needed yet. Free AWS *learning content* (AWS Skill Builder, which only needs a no-cost AWS Builder ID, not a billed account) can be started anytime without triggering that clock.
 
 ### Phase 1 — Python & CS Reactivation (Weeks 2–5)
 - Python fundamentals through building, not syntax drills: functions, OOP, file I/O, error handling, virtual environments, packaging.
@@ -58,6 +58,7 @@
 - Milestone: a small multi-file CLI tool, tested, in its own git repo with a real README.
 
 ### Phase 2 — Cloud & Data Engineering Foundations (Weeks 6–9)
+- **Create the actual AWS free-tier account here** (not in Phase 0) — starts the 12-month free-tier clock right when it'll get used, per the trial-period rule. Set billing alarms immediately on creation.
 - AWS core services: IAM, EC2, S3, Lambda, API Gateway.
 - Docker basics — containerize something you built in Phase 1.
 - CI/CD basics (GitHub Actions) — auto-run tests on push.
