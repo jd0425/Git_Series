@@ -39,14 +39,17 @@ Highlights relevant to an AI-implementation career pivot:
 ## Constraints & Preferences
 - **Learning style:** Kinesthetic — build-first, minimal passive lecture, reflect after doing.
 - **Time available:** ~6-8 hrs/day, 5 days/week (~30-40 hrs/week), currently high flexibility.
-- **Budget:** Free/open-source resources preferred; Udemy access via a library card; open to modest spend (e.g., cert exam fees) — to be confirmed per item.
+- **Budget:** Free/open-source resources preferred, but not a hard constraint — willing to pay for a tool/course/exam when it's demonstrably worth it (confirmed: OK with ~$150–300 AWS cert exam fees). Udemy access via **Ocean County Library** card (likely the "Gale Presents: Udemy" library program — a curated subset of Udemy's catalog, not the full marketplace; actual available Python/AWS/data courses need to be checked in-account before relying on any specific one).
 - **Devices:** 16" MacBook Pro (2019, Intel i9 8-core, AMD Radeon Pro 5500M, 16GB RAM, 1TB SSD) is the primary dev machine — Intel-based, no unified memory/Metal acceleration, so AI/LLM work defaults to cloud APIs (Anthropic, AWS Bedrock); local LLMs are an optional side-exercise limited to small quantized models (~3B–7B params). Dell Inspiron 3510 is used for VDI only, not a dev environment.
 - **Certification goal:** Industry-recognized cloud/AI certification, starting with AWS Certified Solutions Architect – Associate, stacking toward AI/ML-focused AWS certifications.
 - **Reinforcement:** Wants spaced repetition, gamified progress tracking, and simulated on-the-job feedback once entry-level competency is reached.
 - **Note-taking:** Wants to markup PDFs/save lecture excerpts for review — addressed via Obsidian (free) as the interim tool, ahead of any dedicated companion app.
 
 ## Open Items (not yet confirmed)
-- Exact Udemy library access (which library system) and any other library-provided platforms (O'Reilly, LinkedIn Learning)
-- Cert exam budget confirmation (~$150–$300 per AWS exam)
-- Any still-active NJIT alumni resources (library databases, Coursera, career services)
+- **NJIT alumni resources: not counted on.** Learner is unsure if any benefits are still active after time away — plan does not depend on NJIT access; revisit opportunistically only if learner confirms something is live.
 - Whether the gamified/mobile companion app is a parallel deliverable now or a later product phase (currently planned as a later phase)
+
+## Resolved
+- Udemy access is via **Ocean County Library** (likely "Gale Presents: Udemy," a curated catalog, not the full marketplace) — check in-account before relying on a specific course.
+- Budget is not free-only: OK with ~$150–300 AWS cert exam fees and paying for other tools/courses when demonstrably worth it.
+- **Trial-period rule (applies to any paid app/tool going forward):** when a resource is only free for a limited trial, schedule the phase that uses it most intensively to start right when the trial begins, and log the trial start/end date in the vault so nothing auto-renews or expires unused. Never assume "we'll get to it later" with a running trial clock.

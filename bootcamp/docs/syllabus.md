@@ -116,8 +116,10 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 | Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
 | AI/LLM engineering | Anthropic documentation & Anthropic Academy, DeepLearning.AI short courses (free), Hugging Face free courses |
 | SQL-to-Python bridge | pandas documentation, Kaggle free datasets |
-| Supplemental video | Udemy via your library access — to be slotted in once specific available courses are confirmed |
+| Supplemental video | Udemy via **Ocean County Library** card (likely "Gale Presents: Udemy" — curated catalog, check in-account for actual Python/AWS/data offerings) |
 | Mock interviews | Pramp (free peer mock interviews) |
+
+**Trial-period rule:** budget isn't free-only — paying for a course, exam, or tool is fine when it's worth it (confirmed: AWS cert fees, ~$150–300 each). But whenever something is only free for a limited trial (a paid course platform, a software trial, cloud credits with an expiry), the phase that uses it most intensively gets scheduled to start right when the trial starts, and the start/end date gets logged in the Obsidian vault — never let a trial clock run out unused or auto-renew unnoticed.
 
 ---
 
@@ -132,10 +134,11 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 ## 9. Open Items Before Phase 0 Starts
 
 - ~~MacBook Pro chip/RAM + Dell VDI purpose/restrictions~~ **Resolved:** 16" MacBook Pro (2019, Intel i9 8-core, AMD Radeon Pro 5500M, 16GB RAM) is the primary dev machine; Dell Inspiron 3510 is VDI-only, not a dev environment. No Apple Silicon / unified memory, so AI/LLM work defaults to cloud APIs (Anthropic, AWS Bedrock) rather than local inference. Local LLMs (Ollama) are an optional side-exercise limited to small quantized models (~3B–7B params), not the main path — this doesn't change the plan since Phase 2 onward was already AWS-first.
-- Confirm which Udemy library and any other library-provided learning platforms.
-- Confirm rough budget for cert exam fees (~$150–$300 each).
-- Any still-active NJIT alumni resources worth using (library databases, Coursera, career services).
+- ~~Confirm which Udemy library~~ **Resolved:** Ocean County Library.
+- ~~Confirm rough budget for cert exam fees~~ **Resolved:** OK with ~$150–300/exam and paying for other worthwhile tools/courses — not free-only. See trial-period rule in Section 7.
+- **NJIT alumni resources: not counted on** — unsure if anything's still active after time away; plan doesn't depend on it.
 - Confirm the companion-app decision above (later phase) still holds.
+- **Still waiting on your Section 10 negotiation pass** (timeline, phase order, RegCopilot scope, cert order) before Phase 0 formally starts.
 
 ---
 
