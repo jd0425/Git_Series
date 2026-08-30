@@ -1,7 +1,7 @@
-# Bootcamp Syllabus (v1 — Draft for Negotiation)
+# Bootcamp Syllabus (v1 — Locked)
 ## Track: Software Engineering → AI Solutions Architect / Forward Deployed Engineer
 
-This is a draft. Nothing here is final — push back on scope, pacing, or sequencing before we start Phase 0. See `learner-profile.md` for the background this plan is built against.
+**Status: v1 locked, Phase 0 underway.** Still a living document — amend Section 10 anytime scope, pacing, or sequencing needs to change. See `learner-profile.md` for the background this plan is built against.
 
 ---
 
