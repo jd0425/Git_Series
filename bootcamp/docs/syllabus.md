@@ -47,7 +47,7 @@
 - Environment setup (Python, VS Code, virtual envs, terminal fluency check) on the MacBook Pro; confirm Dell VDI role/limits.
 - Python diagnostic exercise (calibrate real starting point regardless of self-report).
 - Light math/stats diagnostic (probability, basic linear algebra intuition) — identifies gaps, not a full course.
-- Obsidian vault set up as the note-taking/PDF-markup/spaced-repetition system.
+- Obsidian vault set up for raw note-taking/PDF markup; NotebookLM (free, Google) set up as the active-synthesis layer on top of it — see `phase-0/learning-workflow.md`.
 - **AWS account creation deliberately deferred to the start of Phase 2** (see trial-period rule, Section 7) — the free tier's 12-month clock starts at account creation, so creating it now would burn runway during Phases 0–1 when it isn't needed yet. Free AWS *learning content* (AWS Skill Builder, which only needs a no-cost AWS Builder ID, not a billed account) can be started anytime without triggering that clock.
 
 ### Phase 1 — Python & CS Reactivation (Weeks 2–5)
@@ -101,7 +101,7 @@
 
 - **Build-first, always.** Minimal theory before touching code/tools; reflect after doing, not before.
 - **Real, regulated-industry-flavored scenarios** wherever possible, to keep leveraging your background.
-- **Weekly spaced-repetition retrieval quiz** — short, tracked in the Obsidian vault.
+- **Weekly spaced-repetition retrieval quiz** — generated from your own notes/course material via NotebookLM (grounded synthesis, not passive rereading), tracked in the Obsidian vault. See `phase-0/learning-workflow.md` for the full Obsidian + NotebookLM workflow.
 - **Simulated on-the-job feedback**, written like a manager reviewing an employee's work, starting once entry-level competency is reached (Phase 3 checkpoint onward) — not from day one, since it wouldn't mean anything yet.
 - **Gamification** (streaks, XP, levels) — tracked manually in the vault for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
 - **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting.
@@ -114,7 +114,8 @@
 
 | Need | Resource |
 |---|---|
-| Notes / PDF markup / spaced repetition | **Obsidian** (free, cross-platform, PDF annotation plugin) |
+| Notes / PDF markup | **Obsidian** (free, cross-platform, PDF annotation plugin) — raw capture only |
+| AI notebook / synthesis / spaced repetition | **Google NotebookLM** (free, no trial clock) — source-grounded study guides, quizzes, and audio overviews generated from your own notes/course material; see `phase-0/learning-workflow.md` |
 | Python fundamentals | **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan Ahmed) — already owned on personal Udemy, in progress (26%), chosen as the Phase 1 spine over starting fresh elsewhere. Backup/supplement if more project reps are needed: "100 Days of Code" (Angela Yu), available free via Gale/Ocean County Library. |
 | CS fundamentals | **CS50x** (Harvard, free via edX), NeetCode free tier (light DSA reinforcement) |
 | Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
