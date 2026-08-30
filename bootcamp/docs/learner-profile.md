@@ -43,11 +43,11 @@ Highlights relevant to an AI-implementation career pivot:
 - **Devices:** 16" MacBook Pro (2019, Intel i9 8-core, AMD Radeon Pro 5500M, 16GB RAM, 1TB SSD) is the primary dev machine — Intel-based, no unified memory/Metal acceleration, so AI/LLM work defaults to cloud APIs (Anthropic, AWS Bedrock); local LLMs are an optional side-exercise limited to small quantized models (~3B–7B params). Dell Inspiron 3510 is used for VDI only, not a dev environment.
 - **Certification goal:** Industry-recognized cloud/AI certification, starting with AWS Certified Solutions Architect – Associate, stacking toward AI/ML-focused AWS certifications.
 - **Reinforcement:** Wants spaced repetition, gamified progress tracking, and simulated on-the-job feedback once entry-level competency is reached.
-- **Note-taking:** Wants to markup PDFs/save lecture excerpts for review — addressed via Obsidian (free) as the interim tool, ahead of any dedicated companion app.
+- **Note-taking:** Wants to markup PDFs/save lecture excerpts for review — addressed via Obsidian (free), kept independent of the LearnLoop companion project below.
+- **Companion app: wants it built by them as a project, not adopted as third-party software.** Twice corrected this — the "notebook AI" ask is a request to design/build a personal tool similar to NotebookLM/Obsidian/Anki, not to install one. Resolved as **LearnLoop**, a second project thread growing from a Lesson 2 CLI flashcard app to a full RAG-based notebook app by Phase 3 (see `docs/syllabus.md` Section 5). Gamification is no longer deferred — it ships as part of LearnLoop from v0.2.
 
 ## Open Items (not yet confirmed)
 - **NJIT alumni resources: not counted on.** Learner is unsure if any benefits are still active after time away — plan does not depend on NJIT access; revisit opportunistically only if learner confirms something is live.
-- Whether the gamified/mobile companion app is a parallel deliverable now or a later product phase (currently planned as a later phase)
 
 ## Resolved
 - Udemy access is via **Ocean County Library** (likely "Gale Presents: Udemy," a curated catalog, not the full marketplace) — check in-account before relying on a specific course.

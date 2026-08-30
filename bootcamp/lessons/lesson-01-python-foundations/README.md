@@ -16,18 +16,9 @@ You're ~26% into **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan A
 
 ## 3. Reinforce (flashcards)
 
-`flashcards.txt` — 25 cards, tab-separated (question `\t` answer), ready to import into **Anki** (free, no daily limits, works offline — better fit for daily spaced repetition than querying an AI tool each time):
+`flashcards.txt` — 25 cards, tab-separated (question `\t` answer). For right now, just self-quiz from the raw file (cover the answer column, go down the list) — no app needed yet. **This exact file becomes the input data for Lesson 2's project**, so don't throw it away.
 
-1. Install Anki (anki.web / App Store / Play Store — free).
-2. Create a deck, e.g. "Python Foundations."
-3. File → Import → select `flashcards.txt` → map the two columns to Front/Back.
-4. Review a few minutes a day going forward; Anki schedules the repetition for you.
-
-## 4. Listen (optional, lightweight)
-
-If you want an audio recap: drop **just `cheat-sheet.pdf`** into your self-hosted Open Notebook instance and generate a podcast/audio overview. Since it runs on your own API key, there's no vendor daily cap to worry about — use it as much or as little as you want. Skip this entirely if you don't want it; it's not required. See `phase-0/learning-workflow.md` for setup.
-
-## 5. Build
+## 4. Build
 
 `project-brief.md` — the **Regulatory Deadline Tracker**, a small CLI script that classifies and reports on compliance deadlines. Uses only what's in this lesson (variables, data types, operators, control flow). It's also the first thread of the flagship RegCopilot project's world, at the smallest possible scale.
 
@@ -35,4 +26,6 @@ Build it in your `python-foundations-lab` repo, commit it, and report back.
 
 ---
 
-**Done when:** the project runs correctly, you've been through the flashcards at least once, and you can explain the "Common Pitfalls" section of the cheat sheet in your own words without looking at it. Report back (or say "too easy, give me more") and Lesson 2 gets built next.
+**Coming in Lesson 2:** you'll build **LearnLoop v0.1** — your own CLI flashcard reviewer that reads `flashcards.txt` (yes, this exact file), quizzes you, and re-shows what you get wrong sooner. This replaces needing Anki or any other third-party flashcard app — it's the first version of the personal learning tool you asked me to design as a project instead of pointing you at existing software. It grows into a full AI-powered notebook app (RAG, embeddings, your own API key) by Phase 3.
+
+**Done when:** the project runs correctly, you've self-quizzed from the flashcards at least once, and you can explain the "Common Pitfalls" section of the cheat sheet in your own words without looking at it. Report back (or say "too easy, give me more") and Lesson 2 gets built next.

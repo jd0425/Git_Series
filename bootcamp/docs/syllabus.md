@@ -56,6 +56,7 @@
 - Data structures & algorithms refresh: arrays/hash maps/trees/graphs at a working-fluency level, enough for technical screens at this track's bar — not competitive-programming depth.
 - Bridge exercise: rebuild a SQL/pandas workflow you already know how to do in Excel/SQL, in Python — reactivates existing data intuition instead of starting cold.
 - Milestone: a small multi-file CLI tool, tested, in its own git repo with a real README.
+- **LearnLoop v0.1 and v0.2 built here** (Lesson 2 onward) — see the Companion Project section above.
 
 ### Phase 2 — Cloud & Data Engineering Foundations (Weeks 6–9)
 - **Create the actual AWS free-tier account here** (not in Phase 0) — starts the 12-month free-tier clock right when it'll get used, per the trial-period rule. Set billing alarms immediately on creation.
@@ -64,7 +65,7 @@
 - CI/CD basics (GitHub Actions) — auto-run tests on push.
 - Databases beyond your BI comfort zone: working with Postgres from Python (not just SQL Server/Snowflake via BI tools).
 - **AWS Certified Solutions Architect – Associate** exam prep runs in parallel through this phase and into Phase 3.
-- Milestone: a small API deployed on AWS, with CI running tests automatically.
+- Milestone: **LearnLoop v1.0** — the web-UI + Postgres + AWS-deployed version — serves as this phase's "small API deployed on AWS" milestone directly, not a separate throwaway example.
 
 ### Phase 3 — AI/LLM Engineering (Weeks 10–14)
 - LLM APIs (Anthropic/OpenAI) — prompting, structured outputs, function/tool calling.
@@ -74,7 +75,7 @@
 - Agentic patterns: tool use, multi-step workflows.
 - Optional side-exercise: run a small quantized model locally (Ollama) and compare cost/speed/quality against the cloud API — reinforces the tradeoffs without depending on local hardware you don't have.
 - **Checkpoint: entry/associate-level readiness assessment** — expect this to land around week 8–10 as noted above; resume gets its first rebuild pass here if hit.
-- Milestone: a working RAG prototype over a small real document set (not yet the flagship project's full scope).
+- Milestone: **LearnLoop v2.0** — the RAG/embeddings/auto-flashcard-generation layer — is this phase's working RAG prototype, built on real material you actually care about (not yet RegCopilot's full enterprise scope, but a real, daily-used AI system).
 
 ### Phase 4 — Flagship Project: RegCopilot (Weeks 15–18)
 - Full build: ingest a realistic set of policy/regulatory documents → RAG pipeline with citations → risk-flagging logic → audit-ready summarization output → deployed on AWS (API Gateway + Lambda/ECS) → simple front end.
@@ -105,19 +106,32 @@
 |---|---|
 | **Watch** | Specific video/course assignment — pointed at your existing Udemy courses first, free supplements only where needed |
 | **Read** | A one-page PDF cheat sheet I author for that topic — concepts, syntax, real pitfalls |
-| **Reinforce** | An Anki-importable flashcard deck (free, offline, no usage caps — the daily spaced-repetition tool) |
-| **Listen** *(optional)* | Drop the lesson's PDF into your self-hosted Open Notebook for a study guide or audio overview — no vendor daily caps, since it's your own API key |
-| **Build** | A project brief applying the lesson, threaded toward the RegCopilot flagship project where possible |
+| **Reinforce** | A flashcard set (plain text now; consumed by your own LearnLoop app from v0.1 onward — see below) |
+| **Build** | A project brief applying the lesson — threaded toward RegCopilot (the enterprise/regulatory flagship) or LearnLoop (your own learning-tool project), whichever fits the lesson better |
 
-Obsidian/Open Notebook are optional deepening tools if you want to go further on your own (see `phase-0/learning-workflow.md`) — not required infrastructure. The lesson kit is self-contained.
+Obsidian is an optional deepening tool if you want to capture your own notes beyond a lesson kit (see `phase-0/learning-workflow.md`) — not required infrastructure. Anki and Open Notebook are reference points for what similar tools look like, not things you need to install — **you build your own equivalent as LearnLoop**, described next.
+
+### Companion Project: LearnLoop (your own learning tool, built not installed)
+
+This is the direct answer to "build me a NotebookLM/Obsidian-style tool" — instead of adopting someone else's software, you build your own, and it grows exactly as fast as your skills do. It runs as a second project thread alongside RegCopilot, not a deferred "someday" feature.
+
+| Version | When | What it is | What it exercises |
+|---|---|---|---|
+| **v0.1** | Lesson 2 | CLI flashcard reviewer — reads a lesson's flashcard file, quizzes you, tracks right/wrong, re-shows missed cards sooner | File I/O, functions, loops |
+| **v0.2** | Later Phase 1 | Adds persistence (SQLite, no setup needed) so streaks/scores survive between runs — real gamification, built not bolted on | Basic OOP, a simple embedded DB |
+| **v1.0** | Phase 2 | Wrapped in a minimal web UI (Flask/FastAPI), deployed on AWS with a real Postgres backend — **this becomes Phase 2's "deploy an API" milestone**, not a throwaway example | Web framework, cloud deploy, real DB |
+| **v2.0** | Phase 3 | The real "notebook AI" layer: ingest a PDF, generate embeddings, auto-generate flashcards from source material, RAG-based "ask questions about my notes" chat — your own NotebookLM/Open Notebook, built from scratch on your own Anthropic API key | Embeddings, vector DB, RAG — Phase 3's actual curriculum, not extra scope |
+| **v3.0** | Phase 4/5 (stretch) | Gamification polish, mobile-friendly view — a second real portfolio piece alongside RegCopilot | Whatever's left to demonstrate |
+
+RegCopilot stays the primary interview story (regulated-industry AI implementation). LearnLoop is the "I built my own tool and used it daily" story — different, complementary, and genuinely yours.
 
 - **Build-first, always.** Minimal theory before touching code/tools; reflect after doing, not before.
 - **Real, regulated-industry-flavored scenarios** wherever possible, to keep leveraging your background.
 - **Simulated on-the-job feedback**, written like a manager reviewing an employee's work, starting once entry-level competency is reached (Phase 3 checkpoint onward) — not from day one, since it wouldn't mean anything yet.
-- **Gamification** (streaks, XP, levels) — tracked manually for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
+- **Gamification** (streaks, XP, levels) — built directly into LearnLoop starting at v0.2, not deferred to an undefined later phase.
 - **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting. Report back after each lesson kit; the next one is built based on how that one went, not on a fixed calendar.
 - **Industry-standard first.** When a real industry-standard tool matters for credibility (interviews, portfolio), use it even if it costs money — budget is not free-only. When the true industry tool genuinely isn't practical to get hands-on with (enterprise-only, prohibitively expensive, access-gated), the fallback is a video walkthrough of a real industry implementation of that category of tool, not a silent downgrade to a toy substitute.
-- **Gamification stays deferred** — confirmed later-phase, not a Phase 0–6 deliverable.
+- **Superseded:** gamification and the "notebook AI" tool are no longer deferred to an undefined later phase — both are now the LearnLoop companion project, built starting Lesson 2 (see Section 5's Companion Project box above).
 
 ---
 
@@ -125,8 +139,8 @@ Obsidian/Open Notebook are optional deepening tools if you want to go further on
 
 | Need | Resource |
 |---|---|
-| Notes / PDF markup | **Obsidian** (free, cross-platform, PDF annotation plugin) — raw capture only |
-| AI notebook / synthesis | **Open Notebook** (self-hosted, MIT license, Docker, BYO API key — no vendor usage caps) — source-grounded study guides, Q&A, and podcast/audio overviews from your own notes/course material; see `phase-0/learning-workflow.md`. Also doubles as early Docker + LLM-API hands-on practice. |
+| Notes / PDF markup | **Obsidian** (free, cross-platform, PDF annotation plugin) — raw capture only, optional |
+| AI notebook / synthesis / flashcards / gamification | **LearnLoop** — your own tool, built as the Companion Project (Section 5). Anki and Open Notebook are reference points for what this category of tool looks like elsewhere (see `phase-0/learning-workflow.md`), not things you need to install. |
 | Python fundamentals | **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan Ahmed) — already owned on personal Udemy, in progress (26%), chosen as the Phase 1 spine over starting fresh elsewhere. Backup/supplement if more project reps are needed: "100 Days of Code" (Angela Yu), available free via Gale/Ocean County Library. |
 | CS fundamentals | **CS50x** (Harvard, free via edX), NeetCode free tier (light DSA reinforcement) |
 | Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
@@ -153,7 +167,7 @@ Obsidian/Open Notebook are optional deepening tools if you want to go further on
 - ~~Confirm which Udemy library~~ **Resolved:** Ocean County Library.
 - ~~Confirm rough budget for cert exam fees~~ **Resolved:** OK with ~$150–300/exam and paying for other worthwhile tools/courses — not free-only. See trial-period rule in Section 7.
 - **NJIT alumni resources: not counted on** — unsure if anything's still active after time away; plan doesn't depend on it.
-- ~~Confirm the companion-app decision above (later phase) still holds.~~ **Confirmed:** gamification/companion app stays deferred.
+- ~~Confirm the companion-app decision above (later phase) still holds.~~ **Superseded:** the companion app is no longer deferred — it's the LearnLoop project, built starting Lesson 2 (see Section 5).
 - Timeline, phase order, and cert order not explicitly pushed back on yet — treating as accepted as drafted unless you say otherwise before Phase 0.
 
 ---
@@ -164,5 +178,5 @@ Obsidian/Open Notebook are optional deepening tools if you want to go further on
 
 - Confirmed: budget covers going beyond a free trial into a paid tier for an industry-standard tool (e.g., Pinecone) when that's how the tool is actually used in industry — not capped at free/trial-only.
 - Confirmed: prefer the real industry-standard tool over a free/toy substitute; where hands-on access to the real enterprise tool isn't practical, substitute a video walkthrough of an actual industry implementation rather than skipping the exposure.
-- Confirmed: gamification/companion app stays a later phase, not part of Phases 0–6.
 - Timeline (~18–20 weeks), phase order (cloud before AI/LLM), RegCopilot scope, and cert order (AWS SAA before AI-specific certs) — no objections raised; standing as drafted.
+- **Corrected twice:** the "notebook AI" ask was never about adopting NotebookLM or self-hosting Open Notebook — it's a request to design and build a personal equivalent as a project. Resolved by introducing **LearnLoop** as a second project thread (Section 5), built starting Lesson 2, growing from a CLI flashcard app into a full self-hosted RAG/notebook app by Phase 3. This also absorbs the gamification feature, which is no longer deferred.
