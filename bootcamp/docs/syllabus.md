@@ -71,6 +71,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 - RAG architecture end to end: ingestion, chunking, retrieval, generation, citations.
 - Evals — how to actually measure whether an AI system is working, not just "it looks right."
 - Agentic patterns: tool use, multi-step workflows.
+- Optional side-exercise: run a small quantized model locally (Ollama) and compare cost/speed/quality against the cloud API — reinforces the tradeoffs without depending on local hardware you don't have.
 - **Checkpoint: entry/associate-level readiness assessment** — expect this to land around week 8–10 as noted above; resume gets its first rebuild pass here if hit.
 - Milestone: a working RAG prototype over a small real document set (not yet the flagship project's full scope).
 
@@ -130,7 +131,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 
 ## 9. Open Items Before Phase 0 Starts
 
-- MacBook Pro chip/RAM + Dell VDI purpose/restrictions (determines local LLM feasibility vs. cloud-only labs).
+- ~~MacBook Pro chip/RAM + Dell VDI purpose/restrictions~~ **Resolved:** 16" MacBook Pro (2019, Intel i9 8-core, AMD Radeon Pro 5500M, 16GB RAM) is the primary dev machine; Dell Inspiron 3510 is VDI-only, not a dev environment. No Apple Silicon / unified memory, so AI/LLM work defaults to cloud APIs (Anthropic, AWS Bedrock) rather than local inference. Local LLMs (Ollama) are an optional side-exercise limited to small quantized models (~3B–7B params), not the main path — this doesn't change the plan since Phase 2 onward was already AWS-first.
 - Confirm which Udemy library and any other library-provided learning platforms.
 - Confirm rough budget for cert exam fees (~$150–$300 each).
 - Any still-active NJIT alumni resources worth using (library databases, Coursera, career services).

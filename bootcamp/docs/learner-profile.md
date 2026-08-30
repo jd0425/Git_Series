@@ -40,13 +40,12 @@ Highlights relevant to an AI-implementation career pivot:
 - **Learning style:** Kinesthetic — build-first, minimal passive lecture, reflect after doing.
 - **Time available:** ~6-8 hrs/day, 5 days/week (~30-40 hrs/week), currently high flexibility.
 - **Budget:** Free/open-source resources preferred; Udemy access via a library card; open to modest spend (e.g., cert exam fees) — to be confirmed per item.
-- **Devices:** MacBook Pro (primary) + a Dell machine used for VDI (specs/purpose to confirm — affects whether local LLM experimentation is feasible or if labs stay cloud-only).
+- **Devices:** 16" MacBook Pro (2019, Intel i9 8-core, AMD Radeon Pro 5500M, 16GB RAM, 1TB SSD) is the primary dev machine — Intel-based, no unified memory/Metal acceleration, so AI/LLM work defaults to cloud APIs (Anthropic, AWS Bedrock); local LLMs are an optional side-exercise limited to small quantized models (~3B–7B params). Dell Inspiron 3510 is used for VDI only, not a dev environment.
 - **Certification goal:** Industry-recognized cloud/AI certification, starting with AWS Certified Solutions Architect – Associate, stacking toward AI/ML-focused AWS certifications.
 - **Reinforcement:** Wants spaced repetition, gamified progress tracking, and simulated on-the-job feedback once entry-level competency is reached.
 - **Note-taking:** Wants to markup PDFs/save lecture excerpts for review — addressed via Obsidian (free) as the interim tool, ahead of any dedicated companion app.
 
 ## Open Items (not yet confirmed)
-- MacBook Pro chip/RAM and Dell VDI purpose/restrictions
 - Exact Udemy library access (which library system) and any other library-provided platforms (O'Reilly, LinkedIn Learning)
 - Cert exam budget confirmation (~$150–$300 per AWS exam)
 - Any still-active NJIT alumni resources (library databases, Coursera, career services)
