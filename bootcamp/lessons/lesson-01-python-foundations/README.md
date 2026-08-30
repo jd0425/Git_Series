@@ -25,7 +25,7 @@ You're ~26% into **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan A
 
 ## 4. Listen (optional, lightweight)
 
-If you want an audio recap: drop **just `cheat-sheet.pdf`** into a NotebookLM notebook and generate one audio overview. This is a single, bounded action on curated content — not open-ended querying — so it won't meaningfully touch any daily usage limits. Skip this entirely if you don't want it; it's not required.
+If you want an audio recap: drop **just `cheat-sheet.pdf`** into your self-hosted Open Notebook instance and generate a podcast/audio overview. Since it runs on your own API key, there's no vendor daily cap to worry about — use it as much or as little as you want. Skip this entirely if you don't want it; it's not required. See `phase-0/learning-workflow.md` for setup.
 
 ## 5. Build
 

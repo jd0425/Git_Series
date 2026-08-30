@@ -47,7 +47,7 @@
 - Environment setup (Python, VS Code, virtual envs, terminal fluency check) on the MacBook Pro; confirm Dell VDI role/limits.
 - Python diagnostic exercise (calibrate real starting point regardless of self-report).
 - Light math/stats diagnostic (probability, basic linear algebra intuition) — identifies gaps, not a full course.
-- Obsidian vault set up for raw note-taking/PDF markup; NotebookLM (free, Google) set up as the active-synthesis layer on top of it — see `phase-0/learning-workflow.md`.
+- Obsidian vault set up for raw note-taking/PDF markup; Open Notebook (self-hosted, MIT license, Docker) set up as the active-synthesis layer on top of it — see `phase-0/learning-workflow.md`. Doubles as early, informal Docker + LLM-API practice ahead of Phase 2.
 - **AWS account creation deliberately deferred to the start of Phase 2** (see trial-period rule, Section 7) — the free tier's 12-month clock starts at account creation, so creating it now would burn runway during Phases 0–1 when it isn't needed yet. Free AWS *learning content* (AWS Skill Builder, which only needs a no-cost AWS Builder ID, not a billed account) can be started anytime without triggering that clock.
 
 ### Phase 1 — Python & CS Reactivation (Weeks 2–5)
@@ -106,10 +106,10 @@
 | **Watch** | Specific video/course assignment — pointed at your existing Udemy courses first, free supplements only where needed |
 | **Read** | A one-page PDF cheat sheet I author for that topic — concepts, syntax, real pitfalls |
 | **Reinforce** | An Anki-importable flashcard deck (free, offline, no usage caps — the daily spaced-repetition tool) |
-| **Listen** *(optional)* | Drop the lesson's PDF into NotebookLM for one audio-overview generation — bounded, not open-ended querying, so it won't burn through daily limits |
+| **Listen** *(optional)* | Drop the lesson's PDF into your self-hosted Open Notebook for a study guide or audio overview — no vendor daily caps, since it's your own API key |
 | **Build** | A project brief applying the lesson, threaded toward the RegCopilot flagship project where possible |
 
-Obsidian/NotebookLM are optional deepening tools if you want to go further on your own (see `phase-0/learning-workflow.md`) — not required infrastructure. The lesson kit is self-contained.
+Obsidian/Open Notebook are optional deepening tools if you want to go further on your own (see `phase-0/learning-workflow.md`) — not required infrastructure. The lesson kit is self-contained.
 
 - **Build-first, always.** Minimal theory before touching code/tools; reflect after doing, not before.
 - **Real, regulated-industry-flavored scenarios** wherever possible, to keep leveraging your background.
@@ -126,7 +126,7 @@ Obsidian/NotebookLM are optional deepening tools if you want to go further on yo
 | Need | Resource |
 |---|---|
 | Notes / PDF markup | **Obsidian** (free, cross-platform, PDF annotation plugin) — raw capture only |
-| AI notebook / synthesis / spaced repetition | **Google NotebookLM** (free, no trial clock) — source-grounded study guides, quizzes, and audio overviews generated from your own notes/course material; see `phase-0/learning-workflow.md` |
+| AI notebook / synthesis | **Open Notebook** (self-hosted, MIT license, Docker, BYO API key — no vendor usage caps) — source-grounded study guides, Q&A, and podcast/audio overviews from your own notes/course material; see `phase-0/learning-workflow.md`. Also doubles as early Docker + LLM-API hands-on practice. |
 | Python fundamentals | **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan Ahmed) — already owned on personal Udemy, in progress (26%), chosen as the Phase 1 spine over starting fresh elsewhere. Backup/supplement if more project reps are needed: "100 Days of Code" (Angela Yu), available free via Gale/Ocean County Library. |
 | CS fundamentals | **CS50x** (Harvard, free via edX), NeetCode free tier (light DSA reinforcement) |
 | Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
