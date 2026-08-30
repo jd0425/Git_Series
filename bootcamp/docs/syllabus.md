@@ -99,12 +99,23 @@
 
 ## 6. Learning Method
 
+**Delivery model: Lesson Kits.** You are not assembling a tool stack or curating your own material — I do that. Every topic ships as a complete kit under `lessons/lesson-NN-<topic>/`:
+
+| Part | What it is |
+|---|---|
+| **Watch** | Specific video/course assignment — pointed at your existing Udemy courses first, free supplements only where needed |
+| **Read** | A one-page PDF cheat sheet I author for that topic — concepts, syntax, real pitfalls |
+| **Reinforce** | An Anki-importable flashcard deck (free, offline, no usage caps — the daily spaced-repetition tool) |
+| **Listen** *(optional)* | Drop the lesson's PDF into NotebookLM for one audio-overview generation — bounded, not open-ended querying, so it won't burn through daily limits |
+| **Build** | A project brief applying the lesson, threaded toward the RegCopilot flagship project where possible |
+
+Obsidian/NotebookLM are optional deepening tools if you want to go further on your own (see `phase-0/learning-workflow.md`) — not required infrastructure. The lesson kit is self-contained.
+
 - **Build-first, always.** Minimal theory before touching code/tools; reflect after doing, not before.
 - **Real, regulated-industry-flavored scenarios** wherever possible, to keep leveraging your background.
-- **Weekly spaced-repetition retrieval quiz** — generated from your own notes/course material via NotebookLM (grounded synthesis, not passive rereading), tracked in the Obsidian vault. See `phase-0/learning-workflow.md` for the full Obsidian + NotebookLM workflow.
 - **Simulated on-the-job feedback**, written like a manager reviewing an employee's work, starting once entry-level competency is reached (Phase 3 checkpoint onward) — not from day one, since it wouldn't mean anything yet.
-- **Gamification** (streaks, XP, levels) — tracked manually in the vault for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
-- **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting.
+- **Gamification** (streaks, XP, levels) — tracked manually for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
+- **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting. Report back after each lesson kit; the next one is built based on how that one went, not on a fixed calendar.
 - **Industry-standard first.** When a real industry-standard tool matters for credibility (interviews, portfolio), use it even if it costs money — budget is not free-only. When the true industry tool genuinely isn't practical to get hands-on with (enterprise-only, prohibitively expensive, access-gated), the fallback is a video walkthrough of a real industry implementation of that category of tool, not a silent downgrade to a toy substitute.
 - **Gamification stays deferred** — confirmed later-phase, not a Phase 0–6 deliverable.
 

@@ -1,0 +1,26 @@
+What does `7 / 2` evaluate to in Python 3?	3.5 (true division always returns a float)
+What does `7 // 2` evaluate to?	3 (floor division, drops the remainder)
+What does `7 % 2` evaluate to?	1 (the remainder)
+Name the four immutable built-in types covered in this lesson.	int, float, str, tuple (bool is also immutable)
+Name the three mutable built-in types covered in this lesson.	list, dict, set
+Is a Python bool a subtype of int?	Yes — True == 1 and False == 0
+What happens if you try `my_string[0] = "x"`?	TypeError — strings are immutable
+If `b = a` where `a` is a list, and you then modify `b`, does `a` change too?	Yes — both names point to the same list object
+How do you make a real, independent copy of a list `a`?	`b = a.copy()` or `b = list(a)`
+What's the difference between `==` and `is`?	`==` checks value equality; `is` checks object identity (same memory location)
+List five falsy values in Python.	0, 0.0, "", [], None (also {}, (), set(), False)
+Is the string "0" truthy or falsy?	Truthy — only the empty string "" is falsy
+What does `enumerate(my_list)` give you in a for loop?	Pairs of (index, item) as you iterate
+What keyword immediately exits a loop entirely?	break
+What keyword skips to the next iteration of a loop without exiting it?	continue
+Write a ternary expression that sets x to 5 if `cond` is True, else 10.	`x = 5 if cond else 10`
+What data structure would you use for unique, unordered values with fast membership checks?	set
+What data structure preserves insertion order and maps keys to values?	dict
+Why would you choose a tuple over a list?	When the sequence shouldn't change after creation (e.g. fixed coordinates, a record)
+What does `type(3.0)` return?	<class 'float'>
+Does Python's dict guarantee sorted order?	No — it preserves insertion order (3.7+), not sorted order; use `sorted()` explicitly
+What operator raises a number to a power?	** (e.g. `2 ** 3` is 8)
+What's the output of `bool([])`?	False — an empty list is falsy
+What's the output of `bool([0])`?	True — a non-empty list is truthy even if its only element is falsy
+Convert the string "42" to an integer.	`int("42")`
+What error do you get from `int("abc")`?	ValueError

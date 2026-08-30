@@ -1,4 +1,6 @@
-# Learning Workflow: Obsidian + NotebookLM
+# Optional Deepening Tools: Obsidian + NotebookLM
+
+**This is optional.** The primary delivery model is the per-topic Lesson Kit (see `docs/syllabus.md` Section 6 and `lessons/`) — each kit already ships its own flashcards (Anki) and cheat sheet PDF, so you don't need to build or maintain this workflow yourself. Use this only if you want to go deeper on your own beyond what a lesson kit provides — e.g. capturing your own notes on something a kit didn't cover in enough depth.
 
 Two tools, two different jobs. Don't blend them — the split is what makes this work.
 
