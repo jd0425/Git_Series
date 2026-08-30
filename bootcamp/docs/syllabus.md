@@ -67,7 +67,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 
 ### Phase 3 — AI/LLM Engineering (Weeks 10–14)
 - LLM APIs (Anthropic/OpenAI) — prompting, structured outputs, function/tool calling.
-- Embeddings and vector databases (Chroma or pgvector to start — free/local-friendly).
+- Embeddings and vector databases: **Pinecone** as the primary tool (industry-standard managed vector DB, free tier covers this phase, paid tier if the project outgrows it) — Chroma/pgvector kept as a free local fallback for quick experiments, not the default.
 - RAG architecture end to end: ingestion, chunking, retrieval, generation, citations.
 - Evals — how to actually measure whether an AI system is working, not just "it looks right."
 - Agentic patterns: tool use, multi-step workflows.
@@ -79,6 +79,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 - Full build: ingest a realistic set of policy/regulatory documents → RAG pipeline with citations → risk-flagging logic → audit-ready summarization output → deployed on AWS (API Gateway + Lambda/ECS) → simple front end.
 - Built in stages that mirror a real client engagement: a simulated "requirements gathering" milestone (using your PMO background deliberately), a "client demo" milestone, an "iterate on client feedback" milestone — not just a linear build.
 - Testing, logging, and basic security/data-handling considerations included (this is your regulatory background's moment — treat PII/compliance handling in the project itself as a feature, not an afterthought).
+- Where a true enterprise GRC/compliance platform (e.g., Palantir Foundry, OneTrust, ServiceNow GRC) isn't practical to get hands-on with, watch and dissect a real vendor demo/implementation video of that category of tool before designing the equivalent piece of RegCopilot — the goal is architecture informed by how it's actually built in industry, not an invented pattern.
 - Milestone: fully deployed, demoable project with a written case-study writeup for your portfolio and interview story bank.
 
 ### Phase 5 — Certification, Interview Prep, Resume Iteration (Weeks 17–20, overlapping Phase 4)
@@ -103,6 +104,8 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 - **Simulated on-the-job feedback**, written like a manager reviewing an employee's work, starting once entry-level competency is reached (Phase 3 checkpoint onward) — not from day one, since it wouldn't mean anything yet.
 - **Gamification** (streaks, XP, levels) — tracked manually in the vault for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
 - **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting.
+- **Industry-standard first.** When a real industry-standard tool matters for credibility (interviews, portfolio), use it even if it costs money — budget is not free-only. When the true industry tool genuinely isn't practical to get hands-on with (enterprise-only, prohibitively expensive, access-gated), the fallback is a video walkthrough of a real industry implementation of that category of tool, not a silent downgrade to a toy substitute.
+- **Gamification stays deferred** — confirmed later-phase, not a Phase 0–6 deliverable.
 
 ---
 
@@ -119,7 +122,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 | Supplemental video | Udemy via **Ocean County Library** card (likely "Gale Presents: Udemy" — curated catalog, check in-account for actual Python/AWS/data offerings) |
 | Mock interviews | Pramp (free peer mock interviews) |
 
-**Trial-period rule:** budget isn't free-only — paying for a course, exam, or tool is fine when it's worth it (confirmed: AWS cert fees, ~$150–300 each). But whenever something is only free for a limited trial (a paid course platform, a software trial, cloud credits with an expiry), the phase that uses it most intensively gets scheduled to start right when the trial starts, and the start/end date gets logged in the Obsidian vault — never let a trial clock run out unused or auto-renew unnoticed.
+**Trial-period & spend rule:** budget isn't free-only — paying for a course, exam, or an industry-standard tool (e.g., Pinecone beyond its free tier) is fine when it's worth it, including going past a trial into a paid tier if that's what real industry usage requires. Whenever something is only free for a limited trial (a paid course platform, a software trial, cloud credits with an expiry), the phase that uses it most intensively still gets scheduled to start right when the trial starts, and the start/end date gets logged in the Obsidian vault — never let a trial clock run out unused or auto-renew unnoticed, and never stay stuck on a crippled free tier when the point is to learn the tool the way industry actually uses it.
 
 ---
 
@@ -137,8 +140,8 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 - ~~Confirm which Udemy library~~ **Resolved:** Ocean County Library.
 - ~~Confirm rough budget for cert exam fees~~ **Resolved:** OK with ~$150–300/exam and paying for other worthwhile tools/courses — not free-only. See trial-period rule in Section 7.
 - **NJIT alumni resources: not counted on** — unsure if anything's still active after time away; plan doesn't depend on it.
-- Confirm the companion-app decision above (later phase) still holds.
-- **Still waiting on your Section 10 negotiation pass** (timeline, phase order, RegCopilot scope, cert order) before Phase 0 formally starts.
+- ~~Confirm the companion-app decision above (later phase) still holds.~~ **Confirmed:** gamification/companion app stays deferred.
+- Timeline, phase order, and cert order not explicitly pushed back on yet — treating as accepted as drafted unless you say otherwise before Phase 0.
 
 ---
 
@@ -146,4 +149,7 @@ This is a draft. Nothing here is final — push back on scope, pacing, or sequen
 
 *(Use this section to record what you pushed back on and what changed, so the plan stays a living document instead of getting silently rewritten.)*
 
-- —
+- Confirmed: budget covers going beyond a free trial into a paid tier for an industry-standard tool (e.g., Pinecone) when that's how the tool is actually used in industry — not capped at free/trial-only.
+- Confirmed: prefer the real industry-standard tool over a free/toy substitute; where hands-on access to the real enterprise tool isn't practical, substitute a video walkthrough of an actual industry implementation rather than skipping the exposure.
+- Confirmed: gamification/companion app stays a later phase, not part of Phases 0–6.
+- Timeline (~18–20 weeks), phase order (cloud before AI/LLM), RegCopilot scope, and cert order (AWS SAA before AI-specific certs) — no objections raised; standing as drafted.
