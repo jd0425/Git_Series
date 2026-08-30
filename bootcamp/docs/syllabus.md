@@ -1,0 +1,145 @@
+# Bootcamp Syllabus (v1 — Draft for Negotiation)
+## Track: Software Engineering → AI Solutions Architect / Forward Deployed Engineer
+
+This is a draft. Nothing here is final — push back on scope, pacing, or sequencing before we start Phase 0. See `learner-profile.md` for the background this plan is built against.
+
+---
+
+## 1. Target Outcome
+
+- **Primary target roles:** Solutions Architect, Forward Deployed Engineer, Customer/Field Engineer — roles that implement AI solutions directly with enterprise clients — at major cloud/tech companies (AWS, Google Cloud, Databricks, Meta, Palantir-style orgs).
+- **Explicitly not targeting:** Core FAANG Software Engineer IC roles. Ruled out for this timeline — see learner profile for why.
+- **Level ambition:** Mid-to-upper level, leveraging 10+ years of professional seniority. I will flag in real time when entry/associate-level competency is reached so we can decide whether to start applying early, and the resume gets rebuilt at each checkpoint (entry → mid → upper), not just once at the end.
+- **Certification path:** AWS Certified Solutions Architect – Associate first (matches the target title directly, broadly recognized) → AWS Certified AI Practitioner and/or AWS Certified Machine Learning Engineer – Associate → stretch goal: AWS Certified Machine Learning – Specialty.
+- **Flagship project — "RegCopilot":** An AI compliance/governance assistant — RAG over policy and regulatory documents, automated risk flagging, audit-ready summarization — built incrementally from a script to a deployed cloud system across the whole program. Directly reuses the OCC/MRA/FDA regulatory background as the project's premise, which is also the interview story.
+
+---
+
+## 2. What We're Not Re-Teaching (your existing strength)
+
+- **SQL** across Snowflake/Postgres/SQL Server, data modeling, star schema, warehousing.
+- **BI/data storytelling** (Power BI, Tableau, Qlik) — reused for project demos and stakeholder communication practice, not retaught from scratch.
+- **Git/GitHub basics** — confirmed via your practice repo. We build on it (branch workflows, PRs, project structure, commit discipline) rather than starting at "what is a commit."
+- **Stakeholder management, executive communication, regulatory domain knowledge** — this is arguably your biggest edge for FDE-style roles and gets deliberately exercised throughout, not treated as a soft-skill afterthought.
+
+## 3. What We're Building From Near-Zero
+
+- Hands-on Python (real, multi-file projects — not scripts)
+- CS fundamentals reactivation (data structures/algorithms at a Solutions-Architect-appropriate depth — not a full LeetCode grind)
+- Cloud infrastructure (AWS primary)
+- AI/LLM engineering: embeddings, vector databases, RAG, evals, agentic/tool-use patterns
+- Software engineering practice: testing, packaging, CI/CD basics, code review habits
+- Technical interviewing calibrated to this specific track (not generic SWE interview prep)
+
+---
+
+## 4. Time Commitment
+
+- **Cadence:** 5 days/week, 6–8 hrs/day (~30–40 hrs/week)
+- **Total duration:** ~18–20 weeks (~4.5–5 months) to mid-level interview-ready, with an entry/associate-level checkpoint around **week 8–10**.
+- This is a plan, not a contract. We adjust weekly based on actual pace — tell me immediately if something is too easy (I'll escalate difficulty) or too slow (we'll cut scope, not quality).
+
+---
+
+## 5. Phase-by-Phase Breakdown
+
+### Phase 0 — Diagnostic & Setup (Week 1)
+- Environment setup (Python, VS Code, virtual envs, terminal fluency check) on the MacBook Pro; confirm Dell VDI role/limits.
+- Python diagnostic exercise (calibrate real starting point regardless of self-report).
+- Light math/stats diagnostic (probability, basic linear algebra intuition) — identifies gaps, not a full course.
+- Obsidian vault set up as the note-taking/PDF-markup/spaced-repetition system.
+- AWS free-tier account created; billing alarms set (safety first).
+
+### Phase 1 — Python & CS Reactivation (Weeks 2–5)
+- Python fundamentals through building, not syntax drills: functions, OOP, file I/O, error handling, virtual environments, packaging.
+- Testing discipline from day one (pytest) — every exercise ships with a test, not bolted on later.
+- Data structures & algorithms refresh: arrays/hash maps/trees/graphs at a working-fluency level, enough for technical screens at this track's bar — not competitive-programming depth.
+- Bridge exercise: rebuild a SQL/pandas workflow you already know how to do in Excel/SQL, in Python — reactivates existing data intuition instead of starting cold.
+- Milestone: a small multi-file CLI tool, tested, in its own git repo with a real README.
+
+### Phase 2 — Cloud & Data Engineering Foundations (Weeks 6–9)
+- AWS core services: IAM, EC2, S3, Lambda, API Gateway.
+- Docker basics — containerize something you built in Phase 1.
+- CI/CD basics (GitHub Actions) — auto-run tests on push.
+- Databases beyond your BI comfort zone: working with Postgres from Python (not just SQL Server/Snowflake via BI tools).
+- **AWS Certified Solutions Architect – Associate** exam prep runs in parallel through this phase and into Phase 3.
+- Milestone: a small API deployed on AWS, with CI running tests automatically.
+
+### Phase 3 — AI/LLM Engineering (Weeks 10–14)
+- LLM APIs (Anthropic/OpenAI) — prompting, structured outputs, function/tool calling.
+- Embeddings and vector databases (Chroma or pgvector to start — free/local-friendly).
+- RAG architecture end to end: ingestion, chunking, retrieval, generation, citations.
+- Evals — how to actually measure whether an AI system is working, not just "it looks right."
+- Agentic patterns: tool use, multi-step workflows.
+- **Checkpoint: entry/associate-level readiness assessment** — expect this to land around week 8–10 as noted above; resume gets its first rebuild pass here if hit.
+- Milestone: a working RAG prototype over a small real document set (not yet the flagship project's full scope).
+
+### Phase 4 — Flagship Project: RegCopilot (Weeks 15–18)
+- Full build: ingest a realistic set of policy/regulatory documents → RAG pipeline with citations → risk-flagging logic → audit-ready summarization output → deployed on AWS (API Gateway + Lambda/ECS) → simple front end.
+- Built in stages that mirror a real client engagement: a simulated "requirements gathering" milestone (using your PMO background deliberately), a "client demo" milestone, an "iterate on client feedback" milestone — not just a linear build.
+- Testing, logging, and basic security/data-handling considerations included (this is your regulatory background's moment — treat PII/compliance handling in the project itself as a feature, not an afterthought).
+- Milestone: fully deployed, demoable project with a written case-study writeup for your portfolio and interview story bank.
+
+### Phase 5 — Certification, Interview Prep, Resume Iteration (Weeks 17–20, overlapping Phase 4)
+- Sit AWS Certified Solutions Architect – Associate exam.
+- Begin AI-focused AWS cert prep (AI Practitioner / ML Engineer Associate) if pace allows.
+- Interview prep calibrated to this track: light-to-moderate coding screens, SQL (your strength — sharpen, don't rebuild), "design a solution for this client scenario" style system design, and heavy behavioral prep using STAR stories mined from your actual resume history.
+- Mock interviews (free peer platforms) on a schedule, not just at the end.
+- Resume rebuilt for mid/upper-level target roles, incorporating RegCopilot and cert(s).
+
+### Phase 6 — Job Search Sprint (Week 20+, ongoing)
+- Applications targeted at Solutions Architect / FDE / Customer Engineer postings.
+- Continued mock interviews and resume iteration per role/company.
+- Optional second, smaller project if a specific application calls for it.
+
+---
+
+## 6. Learning Method
+
+- **Build-first, always.** Minimal theory before touching code/tools; reflect after doing, not before.
+- **Real, regulated-industry-flavored scenarios** wherever possible, to keep leveraging your background.
+- **Weekly spaced-repetition retrieval quiz** — short, tracked in the Obsidian vault.
+- **Simulated on-the-job feedback**, written like a manager reviewing an employee's work, starting once entry-level competency is reached (Phase 3 checkpoint onward) — not from day one, since it wouldn't mean anything yet.
+- **Gamification** (streaks, XP, levels) — tracked manually in the vault for now. A dedicated mobile/gamified companion app is a **later product phase**, once this curriculum is validated by actually going through it — not a blocker to starting.
+- **Escalation on demand:** if something feels too easy, say so immediately and the difficulty goes up — no coasting.
+
+---
+
+## 7. Tools & Resources (free-first)
+
+| Need | Resource |
+|---|---|
+| Notes / PDF markup / spaced repetition | **Obsidian** (free, cross-platform, PDF annotation plugin) |
+| Python fundamentals | Official Python docs, freeCodeCamp Python course, Corey Schafer (YouTube), *Automate the Boring Stuff with Python* (free online) |
+| CS fundamentals | **CS50x** (Harvard, free via edX), NeetCode free tier (light DSA reinforcement) |
+| Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
+| AI/LLM engineering | Anthropic documentation & Anthropic Academy, DeepLearning.AI short courses (free), Hugging Face free courses |
+| SQL-to-Python bridge | pandas documentation, Kaggle free datasets |
+| Supplemental video | Udemy via your library access — to be slotted in once specific available courses are confirmed |
+| Mock interviews | Pramp (free peer mock interviews) |
+
+---
+
+## 8. Assessment & Progression Gates
+
+- Each phase ends with a checkpoint build/challenge — no credit for "watched the video."
+- Resume is rebuilt at each readiness milestone (entry-ready, mid-ready, upper-ready), not just at the end.
+- You flag when something is too easy; I flag when something is a real gap, even if it's uncomfortable to hear.
+
+---
+
+## 9. Open Items Before Phase 0 Starts
+
+- MacBook Pro chip/RAM + Dell VDI purpose/restrictions (determines local LLM feasibility vs. cloud-only labs).
+- Confirm which Udemy library and any other library-provided learning platforms.
+- Confirm rough budget for cert exam fees (~$150–$300 each).
+- Any still-active NJIT alumni resources worth using (library databases, Coursera, career services).
+- Confirm the companion-app decision above (later phase) still holds.
+
+---
+
+## 10. Negotiation Notes
+
+*(Use this section to record what you pushed back on and what changed, so the plan stays a living document instead of getting silently rewritten.)*
+
+- —
