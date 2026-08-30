@@ -115,12 +115,12 @@
 | Need | Resource |
 |---|---|
 | Notes / PDF markup / spaced repetition | **Obsidian** (free, cross-platform, PDF annotation plugin) |
-| Python fundamentals | Official Python docs, freeCodeCamp Python course, Corey Schafer (YouTube), *Automate the Boring Stuff with Python* (free online) |
+| Python fundamentals | **"Python 3 Programming: Beginner to Pro Masterclass"** (Ryan Ahmed) — already owned on personal Udemy, in progress (26%), chosen as the Phase 1 spine over starting fresh elsewhere. Backup/supplement if more project reps are needed: "100 Days of Code" (Angela Yu), available free via Gale/Ocean County Library. |
 | CS fundamentals | **CS50x** (Harvard, free via edX), NeetCode free tier (light DSA reinforcement) |
 | Cloud / AWS | AWS Skill Builder free digital training, AWS Solutions Architect – Associate free learning path |
-| AI/LLM engineering | Anthropic documentation & Anthropic Academy, DeepLearning.AI short courses (free), Hugging Face free courses |
+| AI/LLM engineering (Phase 3, later) | Already owned on personal Udemy, parked until Phase 3: "Google Gemini AI with Python API" (64% done), "LangChain — Agentic AI Engineering", "LLMs with Google Cloud and Python". Plus Anthropic documentation & Anthropic Academy, DeepLearning.AI short courses (free). |
 | SQL-to-Python bridge | pandas documentation, Kaggle free datasets |
-| Supplemental video | Udemy via **Ocean County Library** card (likely "Gale Presents: Udemy" — curated catalog, check in-account for actual Python/AWS/data offerings) |
+| Two Udemy access points | **Personal Udemy** (owned courses, some in progress — don't expire, no rush to start the rest) and **Gale Presents: Udemy** via Ocean County Library card (free curated catalog, supplemental only for now). |
 | Mock interviews | Pramp (free peer mock interviews) |
 
 **Trial-period & spend rule:** budget isn't free-only — paying for a course, exam, or an industry-standard tool (e.g., Pinecone beyond its free tier) is fine when it's worth it, including going past a trial into a paid tier if that's what real industry usage requires. Whenever something is only free for a limited trial (a paid course platform, a software trial, cloud credits with an expiry), the phase that uses it most intensively still gets scheduled to start right when the trial starts, and the start/end date gets logged in the Obsidian vault — never let a trial clock run out unused or auto-renew unnoticed, and never stay stuck on a crippled free tier when the point is to learn the tool the way industry actually uses it.
